@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:4.3.0'
+    testImplementation 'io.rest-assured:json-path:4.3.0'
+    testImplementation 'io.rest-assured:xml-path:4.3.0'
+    testImplementation 'io.rest-assured:json-schema-validator:4.3.0'
+    testImplementation 'io.cucumber:cucumber-junit:6.1.1'
+    testImplementation 'io.cucumber:cucumber-java:6.1.1'
+    //compile 'junit:junit:4.13'
+}
