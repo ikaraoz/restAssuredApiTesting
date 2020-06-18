@@ -29,10 +29,10 @@ public class MyStepdefs {
     }
 
 
-    @Then("the status code is {string}")
-    public void theStatusCodeIs(String statusCode) {
+    @Then("the status code is {int}")
+    public void theStatusCodeIs(int statusCode) {
         validatableResponse = response
                 .then()
-                .statusCode(Integer.parseInt(statusCode));
+                .statusCode(statusCode);
     }
 }
